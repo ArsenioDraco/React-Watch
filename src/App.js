@@ -17,6 +17,16 @@ const Watch = () => {
   const hourDeg = (utcHours % 12) * 30 + utcMinutes * 0.5;
   const minuteDeg = utcMinutes * 6 + utcSeconds * 0.1;
   const secondDeg = utcSeconds * 6;
-  
+  const watchStyle = {
+    
+    position: 'relative',
+    width: '300px',
+    height: '300px',
+    border: '16px solid #444',
+    borderRadius: '50%',
+    background: 'radial-gradient(#222, #000)',
+    boxShadow: '0 0 20px rgba(0,0,0,0.8)',
+    margin: 'auto'
+  };
 
   
