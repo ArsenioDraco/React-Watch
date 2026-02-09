@@ -17,8 +17,8 @@ const Watch = () => {
   const hourDeg = (utcHours % 12) * 30 + utcMinutes * 0.5;
   const minuteDeg = utcMinutes * 6 + utcSeconds * 0.1;
   const secondDeg = utcSeconds * 6;
+  
   const watchStyle = {
-    
     position: 'relative',
     width: '300px',
     height: '300px',
@@ -29,4 +29,12 @@ const Watch = () => {
     margin: 'auto'
   };
 
+  const dialBaseStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transformOrigin: '0% 50%',
+    transition: 'transform 0.05s linear'
+  };
+    
   
