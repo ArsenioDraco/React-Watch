@@ -37,4 +37,5 @@ const Watch = () => {
     transition: 'transform 0.05s linear'
   };
     
-  
+  const centerDotStyle = {
+    
