@@ -52,11 +52,12 @@ const Watch = () => {
   return (
 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', background: '#1e1e1e' }}>
       <div style={watchStyle}>
-        <div style={{
-        <div style={{
-        <div style={{
-        <div style={
+        <div style={{...dialBaseStyle, width: '35%', height: '4px', background: '#fff', transform: `rotate(${hourDeg}deg)` }} />
+        <div style={{...dialBaseStyle, width: '45%', height: '3px', background: '#0f0', transform: `rotate(${minuteDeg}deg)` }} />
+        <div style={{...dialBaseStyle, width: '50%', height: '2px', background: '#f00', transform: `rotate(${secondDeg}deg)` }} />
+        <div style={centerDotStyle} />
       </div>
     </div>
   );
 };
+export default: Watch;
