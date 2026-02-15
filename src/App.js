@@ -60,4 +60,4 @@ const Watch = () => {
     </div>
   );
 };
-export default: Watch;
+export default Watch;
